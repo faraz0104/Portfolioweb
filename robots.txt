@@ -22,4 +22,4 @@ User-agent: DuckDuckBot
 Allow: /
 
 # Sitemap location
-Sitemap: https://farazdigital.com/sitemap.xml
+Sitemap: https://portfolioweb-mauve-zeta.vercel.app/sitemap.xml
