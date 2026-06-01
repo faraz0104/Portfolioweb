@@ -129,28 +129,47 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* ===== CONTACT FORM ===== */
+  /* ===== CONTACT FORM — Web3Forms ===== */
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
-      const btn = contactForm.querySelector('.form-submit');
+      const btn        = contactForm.querySelector('.form-submit');
       const successMsg = document.getElementById('successMsg');
       const originalText = btn.innerHTML;
 
-      // Loading state
+      const accessKey = contactForm.querySelector('[name="access_key"]').value;
+      if (!accessKey || accessKey === 'YOUR_WEB3FORMS_KEY') {
+        alert('Please set your Web3Forms access key in contact.html');
+        return;
+      }
+
       btn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="spin-anim"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg> Sending...';
       btn.disabled = true;
 
-      setTimeout(() => {
-        btn.innerHTML = originalText;
-        btn.disabled = false;
-        if (successMsg) {
-          successMsg.classList.add('show');
+      try {
+        const data = new FormData(contactForm);
+        const res  = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: data
+        });
+        const json = await res.json();
+
+        if (json.success) {
+          if (successMsg) {
+            successMsg.classList.add('show');
+            setTimeout(() => successMsg.classList.remove('show'), 6000);
+          }
           contactForm.reset();
-          setTimeout(() => successMsg.classList.remove('show'), 5000);
+        } else {
+          alert('Something went wrong. Please email us directly at khan97faraz@gmail.com');
         }
-      }, 1800);
+      } catch (err) {
+        alert('Network error. Please email us directly at khan97faraz@gmail.com');
+      } finally {
+        btn.innerHTML = originalText;
+        btn.disabled  = false;
+      }
     });
   }
 

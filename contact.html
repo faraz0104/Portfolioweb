@@ -254,9 +254,14 @@
         <h2 style="font-family:var(--font-display);font-size:1.4rem;font-weight:700;margin-bottom:6px;">Send Me a Message</h2>
         <p style="font-size:0.88rem;color:var(--text-secondary);margin-bottom:28px;">Fill out the form below and I'll get back to you within 24 hours with a detailed response.</p>
 
-        <form id="contactForm" name="contact" netlify data-netlify="true" netlify-honeypot="bot-field" novalidate aria-label="Contact form">
-          <input type="hidden" name="form-name" value="contact" />
-          <p style="display:none;"><label>Don't fill this out: <input name="bot-field" /></label></p>
+        <form id="contactForm" novalidate aria-label="Contact form">
+          <!-- Web3Forms — sends to khan97faraz@gmail.com -->
+          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY" />
+          <input type="hidden" name="subject" value="New Project Inquiry — DevNova Website" />
+          <input type="hidden" name="from_name" value="DevNova Contact Form" />
+          <input type="hidden" name="redirect" value="false" />
+          <!-- Honeypot spam protection -->
+          <input type="checkbox" name="botcheck" style="display:none;" />
           <div class="form-row">
             <div class="form-group">
               <label for="firstName">First Name *</label>
