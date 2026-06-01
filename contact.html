@@ -248,27 +248,40 @@
       <!-- Left: Info -->
       <div>
 
-        <!-- Availability status -->
-        <div class="availability-status" style="margin-bottom:20px;">
-          <span class="avail-dot"></span>
-          Currently Available
-          <span class="avail-spots">2 spots left this month</span>
-        </div>
-
-        <!-- Response badges -->
-        <div class="response-badges">
-          <span class="response-badge">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            Reply in &lt; 24 hours
-          </span>
-          <span class="response-badge">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 13 19.79 19.79 0 0 1 1.93 4.36 2 2 0 0 1 3.92 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            Free Consultation
-          </span>
-          <span class="response-badge">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            No Commitment
-          </span>
+        <!-- Availability + quick stats -->
+        <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px;margin-bottom:20px;">
+          <!-- Status row -->
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--border);">
+            <span style="width:10px;height:10px;background:#10B981;border-radius:50%;display:block;flex-shrink:0;animation:pulse 2s infinite;"></span>
+            <div>
+              <div style="font-family:var(--font-display);font-size:0.95rem;font-weight:700;color:var(--text-primary);">Currently Available</div>
+              <div style="font-size:0.78rem;color:var(--text-muted);margin-top:1px;">Only 2 project spots open this month</div>
+            </div>
+          </div>
+          <!-- Three key facts -->
+          <div style="display:flex;flex-direction:column;gap:14px;">
+            <div style="display:flex;align-items:center;gap:12px;">
+              <div style="width:36px;height:36px;border-radius:8px;background:rgba(108,99,255,0.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1rem;">⚡</div>
+              <div>
+                <div style="font-size:0.88rem;font-weight:600;color:var(--text-primary);">Reply within 24 hours</div>
+                <div style="font-size:0.76rem;color:var(--text-muted);">Usually much faster — same day most times</div>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:12px;">
+              <div style="width:36px;height:36px;border-radius:8px;background:rgba(6,182,212,0.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1rem;">🎯</div>
+              <div>
+                <div style="font-size:0.88rem;font-weight:600;color:var(--text-primary);">Free consultation call</div>
+                <div style="font-size:0.76rem;color:var(--text-muted);">30 min. No pitch, no pressure — just advice</div>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:12px;">
+              <div style="width:36px;height:36px;border-radius:8px;background:rgba(16,185,129,0.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1rem;">🔒</div>
+              <div>
+                <div style="font-size:0.88rem;font-weight:600;color:var(--text-primary);">Zero commitment required</div>
+                <div style="font-size:0.76rem;color:var(--text-muted);">Get a proposal, decide later — no obligation</div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Contact info -->
