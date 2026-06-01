@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Portfolio | Web Design & Development Projects — DevNova</title>
+  <meta name="description" content="Explore my portfolio of professional websites, SEO campaigns, and PSD to HTML projects. Real results for real businesses across multiple industries." />
+  <meta name="keywords" content="web design portfolio, website development projects, SEO case studies, PSD to HTML examples, professional portfolio, DevNova" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://farazdigital.com/portfolio.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://farazdigital.com/portfolio.html" />
+  <meta property="og:title" content="Portfolio — Web Development & SEO Projects by DevNova" />
+  <meta property="og:description" content="Real websites, real results. Browse my portfolio of web development, SEO, and design projects." />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Portfolio — DevNova",
+    "description": "Professional web development, SEO, and PSD to HTML project portfolio",
+    "url": "https://farazdigital.com/portfolio.html",
+    "author": { "@type": "Person", "name": "Faraz" }
+  }
+  </script>
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%236C63FF'/><text x='50%25' y='54%25' font-family='Arial' font-weight='900' font-size='18' fill='white' text-anchor='middle' dominant-baseline='middle'>F</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .project-card-full { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); overflow:hidden; transition:var(--transition); }
+    .project-card-full:hover { border-color:var(--border-accent); transform:translateY(-6px); box-shadow:var(--shadow); }
+    .project-preview-lg { height:240px; position:relative; overflow:hidden; }
+    .project-preview-lg::after { content:''; position:absolute; inset:0; background:rgba(5,11,24,0.4); opacity:0; transition:var(--transition); }
+    .project-card-full:hover .project-preview-lg::after { opacity:1; }
+    .project-overlay-lg { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; z-index:2; opacity:0; transition:var(--transition); }
+    .project-card-full:hover .project-overlay-lg { opacity:1; }
+    .project-info-lg { padding:28px; }
+    .project-meta { display:flex; align-items:center; justify-content:space-between; margin-bottom:10px; flex-wrap:wrap; gap:8px; }
+    .project-category-badge { padding:4px 12px; border-radius:100px; font-size:0.72rem; font-weight:700; letter-spacing:0.04em; text-transform:uppercase; }
+    .cat-webdev { background:rgba(108,99,255,0.12); color:var(--accent-light); border:1px solid rgba(108,99,255,0.25); }
+    .cat-seo { background:rgba(6,182,212,0.1); color:var(--cyan); border:1px solid rgba(6,182,212,0.2); }
+    .cat-psd { background:rgba(245,158,11,0.1); color:var(--orange); border:1px solid rgba(245,158,11,0.2); }
+    .cat-ecom { background:rgba(16,185,129,0.1); color:var(--green); border:1px solid rgba(16,185,129,0.2); }
+    .project-result { font-size:0.78rem; font-weight:600; color:var(--green); display:flex; align-items:center; gap:4px; }
+    .project-title-lg { font-family:var(--font-display); font-size:1.15rem; font-weight:700; margin-bottom:8px; }
+    .project-desc-lg { font-size:0.88rem; color:var(--text-secondary); line-height:1.65; margin-bottom:16px; }
+    .project-stats { display:flex; gap:16px; flex-wrap:wrap; padding-top:16px; border-top:1px solid var(--border); }
+    .project-stat { text-align:center; }
+    .project-stat-val { font-family:var(--font-display); font-size:1.1rem; font-weight:800; color:var(--text-primary); }
+    .project-stat-lbl { font-size:0.7rem; color:var(--text-muted); font-weight:600; }
+    .featured-badge { position:absolute; top:16px; left:16px; z-index:3; background:linear-gradient(135deg,#F59E0B,#EF4444); color:#fff; font-size:0.68rem; font-weight:700; padding:4px 10px; border-radius:100px; letter-spacing:0.06em; text-transform:uppercase; }
+  </style>
+</head>
+
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-stack">
+          <span>DevNova<span class="dot">.</span></span>
+          <span class="logo-sub">Digital Studio</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="contact.html#about">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary">Hire Me</a>
+        <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="contact.html#about">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="btn btn-primary" style="margin-top:16px;">Hire Me</a>
+</div>
+
+
+<!-- PAGE HERO -->
+<header class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="container">
+    <div class="page-hero-inner">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <span>Portfolio</span>
+      </nav>
+      <h1 class="page-title">
+        My Work & <span class="text-gradient">Case Studies</span>
+      </h1>
+      <p class="page-subtitle">
+        50+ projects delivered. Real websites for real businesses — each one built to rank, convert, and grow.
+      </p>
+    </div>
+  </div>
+</header>
+
+
+<!-- ===================================================
+     PORTFOLIO GRID
+====================================================== -->
+<section class="section-pad" id="projects">
+  <div class="container">
+    <!-- Filter Buttons -->
+    <div class="portfolio-filter" role="tablist" aria-label="Filter projects by category">
+      <button class="filter-btn active" data-filter="all" role="tab">All Projects</button>
+      <button class="filter-btn" data-filter="webdev" role="tab">Web Development</button>
+      <button class="filter-btn" data-filter="seo" role="tab">SEO</button>
+      <button class="filter-btn" data-filter="psd" role="tab">PSD to HTML</button>
+      <button class="filter-btn" data-filter="ecom" role="tab">E-Commerce</button>
+    </div>
+
+    <div class="portfolio-full-grid">
+
+      <!-- 1. TechStart Pro -->
+      <article class="project-card-full animate-on-scroll" data-category="webdev" aria-label="TechStart Pro project">
+        <div class="project-preview-lg" style="position:relative;">
+          <span class="featured-badge">Featured</span>
+          <div class="mock-site site-saas" style="height:100%;">
+            <div class="mock-nav">
+              <div class="mock-logo"></div>
+              <div class="mock-nav-links"><div class="mock-nav-link"></div><div class="mock-nav-link"></div><div class="mock-nav-link"></div></div>
+            </div>
+            <div class="mock-hero">
+              <div class="mock-h1" style="width:78%;"></div>
+              <div class="mock-h1-sub"></div>
+              <div class="mock-p" style="width:92%;"></div>
+              <div class="mock-p" style="width:72%;"></div>
+              <div style="display:flex;gap:8px;margin-top:6px;">
+                <div class="mock-btn"></div>
+                <div style="height:24px;width:80px;border-radius:6px;border:1px solid rgba(167,139,250,0.4);"></div>
+              </div>
+            </div>
+            <div class="mock-cards"><div class="mock-card"></div><div class="mock-card"></div><div class="mock-card"></div></div>
+          </div>
+          <div class="project-overlay-lg">
+            <span class="project-overlay-btn">View Case Study →</span>
+          </div>
+        </div>
+        <div class="project-info-lg">
+          <div class="project-meta">
+            <span class="project-category-badge cat-webdev">Web Development</span>
+            <span class="project-result">↑ 320% More Leads</span>
+          </div>
+          <h2 class="project-title-lg">TechStart Pro — SaaS Company Website</h2>
+          <p class="project-desc-lg">Complete SaaS marketing website with animated feature sections, pricing tables, blog, and full CMS. Ranked #1 on Google within 3 months of launch for 12 target keywords.</p>
+          <div class="project-tags"><span class="project-tag">React</span><span class="project-tag">Next.js</span><span class="project-tag">SEO</span><span class="project-tag">Animations</span></div>
+          <div class="project-stats">
+            <div class="project-stat"><div class="project-stat-val text-gradient">#1</div><div class="project-stat-lbl">Google Rank</div></div>
+            <div class="project-stat"><div class="project-stat-val text-gradient">98</div><div class="project-stat-lbl">PageSpeed</div></div>
+            <div class="project-stat"><div class="project-stat-val text-gradient">320%</div><div class="project-stat-lbl">Lead Growth</div></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2. EcoHarvest -->
+      <article class="project-card-full animate-on-scroll delay-1" data-category="ecom" aria-label="EcoHarvest project">
+        <div class="project-preview-lg">
+          <div class="mock-site site-ecom" style="height:100%;">
+            <div class="mock-nav">
+              <div class="mock-logo"></div>
+              <div class="mock-nav-links"><div class="mock-nav-link"></div><div class="mock-nav-link"></div><div class="mock-nav-link"></div><div class="mock-nav-link"></div></div>
+            </div>
+            <div class="mock-hero">
+              <div class="mock-h1" style="width:65%;"></div>
+              <div class="mock-h1-sub"></div>
+              <div class="mock-p" style="width:85%;"></div>
+              <div class="mock-btn"></div>
+            </div>
+            <div class="mock-cards"><div class="mock-card"></div><div class="mock-card"></div><div class="mock-card"></div><div class="mock-card"></div></div>
+          </div>
+          <div class="project-overlay-lg"><span class="project-overlay-btn">View Case Study →</span></div>
+        </div>
+        <div class="project-info-lg">
+          <div class="project-meta">
+            <span class="project-category-badge cat-ecom">E-Commerce</span>
+            <span class="project-result">↑ 5,000 Monthly Visitors</span>
+          </div>
+          <h2 class="project-title-lg">EcoHarvest — Organic Food Store</h2>
+          <p class="project-desc-lg">Full WooCommerce store with 200+ product pages, each SEO-optimized. Grew from 200 to 5,000+ monthly organic visitors in 4 months. Online sales tripled.</p>
+          <div class="project-tags"><span class="project-tag">WordPress</span><span class="project-tag">WooCommerce</span><span class="project-tag">SEO</span></div>
+          <div class="project-stats">
+            <div class="project-stat"><div class="project-stat-val text-gradient">5K+</div><div class="project-stat-lbl">Monthly Visitors</div></div>
+            <div class="project-stat"><div class="project-stat-val text-gradient">3x</div><div class="project-stat-lbl">Sales Growth</div></div>
+            <div class="project-stat"><div class="project-stat-val text-gradient">96</div><div class="project-stat-lbl">PageSpeed</div></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3. MediCare Plus -->
+      <article class="project-card-full animate-on-scroll delay-2" data-category="webdev" aria-label="MediCare Plus project">
+        <div class="project-preview-lg">
+          <div class="mock-site site-medical" style="height:100%;">
+            <div class="mock-nav">
+              <div class="mock-logo"></div>
+              <div class="mock-nav-links"><div class="mock-nav-link"></div><div class="mock-nav-link"></div><div class="mock-nav-link"></div></div>
+            </div>
+            <div class="mock-hero" style="background:#EFF6FF;">
+              <div class="mock-h1" style="width:72%;"></div>
+              <div class="mock-h1-sub"></div>
+              <div class="mock-p" style="width:88%;"></div>
+              <div class="mock-p" style="width:68%;"></div>
+              <div class="mock-btn"></div>
+            </div>
+            <div class="mock-cards" style="background:#F0F7FF;"><div class="mock-card"></div><div class="mock-card"></div><div class="mock-card"></div></div>
+          </div>
+          <div class="project-overlay-lg"><span class="project-overlay-btn">View Case Study →</span></div>
+        </div>
+        <div class="project-info-lg">
+          <div class="project-meta">
+            <span class="project-category-badge cat-webdev">Web Dev + SEO</span>
+            <span class="project-result">↑ 180% More Appointments</span>
+          </div>
+          <h2 class="project-title-lg">MediCare Plus — Healthcare Clinic</h2>
+          <p class="project-desc-lg">Modern healthcare website with appointment booking, doctor profiles, and services. Local SEO strategy resulted in 180% more online appointment bookings.</p>
+          <div class="project-tags"><span class="project-tag">HTML/CSS</span><span class="project-tag">JavaScript</span><span class="project-tag">Local SEO</span></div>
+          <div class="project-stats">
+            <div class="project-stat"><div class="project-stat-val text-gradient">#1</div><div class="project-stat-lbl">Local Maps</div></div>
+            <div class="project-stat"><div class="project-stat-val text-gradient">180%</div><div class="project-stat-lbl">More Bookings</div></div>
+            <div class="project-stat"><div class="project-stat-val text-gradient">99</div><div class="project-stat-lbl">PageSpeed</div></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4. Bella Cucina Restaurant -->
+      <article class="project-card-full animate-on-scroll" data-category="psd" aria-label="Bella Cucina project">
+        <div class="project-preview-lg">
+          <div class="mock-site site-restaurant" style="height:100%;">
+            <div class="mock-nav">
+              <div class="mock-logo"></div>
+              <div class="mock-nav-links"><div class="mock-nav-link"></div><div class="mock-nav-link"></div><div class="mock-nav-link"></div></div>
+            </div>
+            <div class="mock-hero">
+              <div class="mock-h1" style="width:60%;"></div>
+              <div class="mock-h1-sub"></div>
+              <div class="mock-p" style="width:80%;"></div>
+              <div style="display:flex;gap:8px;margin-top:6px;">
+                <div class="mock-btn"></div>
+                <div style="height:24px;width:80px;border-radius:6px;border:1px solid rgba(212,130,0,0.4);"></div>
+              </div>
+            </div>
+            <div class="mock-cards"><div class="mock-card"></div><div class="mock-card"></div><div class="mock-card"></div></div>
+          </div>
+          <div class="project-overlay-lg"><span class="project-overlay-btn">View Case Study →</span></div>
+        </div>
+        <div class="project-info-lg">
+          <div class="project-meta">
+            <span class="project-category-badge cat-psd">PSD to HTML</span>
+            <span class="project-result">✓ Pixel Perfect</span>
+          </div>
+          <h2 class="project-title-lg">Bella Cucina — Italian Restaurant</h2>
+          <p class="project-desc-lg">Converted a premium Figma restaurant design to clean HTML/CSS with online reservation system, animated menu sections, and full mobile responsiveness.</p>
+          <div class="project-tags"><span class="project-tag">Figma to HTML</span><span class="project-tag">CSS Animations</span><span class="project-tag">Responsive</span></div>
+          <div class="project-stats">
+            <div class="project-stat"><div class="project-stat-val text-gradient">100%</div><div class="project-stat-lbl">Pixel Perfect</div></div>
+            <div class="project-stat"><div class="project-stat-val text-gradient">48h</div><div class="project-stat-lbl">Delivery Time</div></div>
+            <div class="project-stat"><div class="project-stat-val text-gradient">5★</div><div class="project-stat-lbl">Client Rating</div></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5. LexCore Legal -->
+      <article class="project-card-full animate-on-scroll delay-1" data-category="seo" aria-label="LexCore Legal project">
+        <div class="project-preview-lg">
+          <div class="mock-site site-legal" style="height:100%;">
+            <div class="mock-nav">
+              <div class="mock-logo"></div>
+              <div class="mock-nav-links"><div class="mock-nav-link"></div><div class="mock-nav-link"></div><div class="mock-nav-link"></div></div>
+            </div>
+            <div class="mock-hero">
+              <div class="mock-h1" style="width:75%;"></div>
+              <div class="mock-h1-sub"></div>
+              <div class="mock-p" style="width:90%;"></div>
+              <div class="mock-p" style="width:65%;"></div>
+              <div class="mock-btn"></div>
+            </div>
+            <div class="mock-cards"><div class="mock-card"></div><div class="mock-card"></div><div class="mock-card"></div></div>
+          </div>
+          <div class="project-overlay-lg"><span class="project-overlay-btn">View Case Study →</span></div>
+        </div>
+        <div class="project-info-lg">
+          <div class="project-meta">
+            <span class="project-category-badge cat-seo">SEO Campaign</span>
+            <span class="project-result">↑ 400% Organic Traffic</span>
+          </div>
+          <h2 class="project-title-lg">LexCore Legal — Law Firm SEO</h2>
+          <p class="project-desc-lg">Comprehensive SEO campaign for a law firm. Targeted 15 high-intent local keywords. Now ranks #1–3 for all target terms, with 400% organic traffic growth in 6 months.</p>
+          <div class="project-tags"><span class="project-tag">Technical SEO</span><span class="project-tag">Local SEO</span><span class="project-tag">Link Building</span></div>
+          <div class="project-stats">
+            <div class="project-stat"><div class="project-stat-val text-gradient">400%</div><div class="project-stat-lbl">Traffic Growth</div></div>
+            <div class="project-stat"><div class="project-stat-val text-gradient">15</div><div class="project-stat-lbl">Page 1 Keywords</div></div>
+            <div class="project-stat"><div class="project-stat-val text-gradient">6mo</div><div class="project-stat-lbl">Time to Results</div></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 6. CryptoVault -->
+      <article class="project-card-full animate-on-scroll delay-2" data-category="webdev" aria-label="CryptoVault project">
+        <div class="project-preview-lg">
+          <div class="mock-site site-crypto" style="height:100%;">
+            <div class="mock-nav">
+              <div class="mock-logo"></div>
+              <div class="mock-nav-links"><div class="mock-nav-link"></div><div class="mock-nav-link"></div><div class="mock-nav-link"></div></div>
+            </div>
+            <div class="mock-hero">
+              <div class="mock-h1" style="width:70%;"></div>
+              <div class="mock-h1-sub"></div>
+              <div class="mock-p" style="width:85%;"></div>
+              <div class="mock-btn"></div>
+            </div>
+            <div class="mock-cards"><div class="mock-card"></div><div class="mock-card"></div><div class="mock-card"></div></div>
+          </div>
+          <div class="project-overlay-lg"><span class="project-overlay-btn">View Case Study →</span></div>
+        </div>
+        <div class="project-info-lg">
+          <div class="project-meta">
+            <span class="project-category-badge cat-webdev">Web Development</span>
+            <span class="project-result">↑ 95 PageSpeed Score</span>
+          </div>
+          <h2 class="project-title-lg">CryptoVault — Fintech Platform</h2>
+          <p class="project-desc-lg">Dark-themed, high-performance fintech landing page with live price tickers, animated charts, dashboard preview, and full SEO + schema markup implementation.</p>
+          <div class="project-tags"><span class="project-tag">JavaScript</span><span class="project-tag">CSS Animations</span><span class="project-tag">Schema Markup</span></div>
+          <div class="project-stats">
+            <div class="project-stat"><div class="project-stat-val text-gradient">95</div><div class="project-stat-lbl">PageSpeed</div></div>
+            <div class="project-stat"><div class="project-stat-val text-gradient">72h</div><div class="project-stat-lbl">Delivery</div></div>
+            <div class="project-stat"><div class="project-stat-val text-gradient">5★</div><div class="project-stat-lbl">Rating</div></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 7. FitLife Coaching -->
+      <article class="project-card-full animate-on-scroll" data-category="psd" aria-label="FitLife Coaching project">
+        <div class="project-preview-lg">
+          <div class="mock-site" style="background:linear-gradient(145deg,#0A1205,#1A2A0A);height:100%;">
+            <div class="mock-nav" style="background:rgba(132,204,22,0.08);border-bottom:1px solid rgba(132,204,22,0.15);">
+              <div class="mock-logo" style="background:#84CC16;"></div>
+              <div class="mock-nav-links"><div class="mock-nav-link" style="background:rgba(132,204,22,0.3);"></div><div class="mock-nav-link" style="background:rgba(132,204,22,0.3);"></div></div>
+            </div>
+            <div class="mock-hero">
+              <div class="mock-h1" style="background:linear-gradient(90deg,#84CC16,#22C55E);width:68%;"></div>
+              <div class="mock-h1-sub" style="background:rgba(132,204,22,0.2);"></div>
+              <div class="mock-p" style="background:rgba(255,255,255,0.1);width:80%;"></div>
+              <div class="mock-btn" style="background:linear-gradient(90deg,#84CC16,#22C55E);"></div>
+            </div>
+            <div class="mock-cards"><div class="mock-card" style="background:rgba(132,204,22,0.06);border:1px solid rgba(132,204,22,0.15);"></div><div class="mock-card" style="background:rgba(132,204,22,0.06);border:1px solid rgba(132,204,22,0.15);"></div><div class="mock-card" style="background:rgba(132,204,22,0.06);border:1px solid rgba(132,204,22,0.15);"></div></div>
+          </div>
+          <div class="project-overlay-lg"><span class="project-overlay-btn">View Case Study →</span></div>
+        </div>
+        <div class="project-info-lg">
+          <div class="project-meta">
+            <span class="project-category-badge cat-psd">PSD to HTML</span>
+            <span class="project-result">✓ 24h Turnaround</span>
+          </div>
+          <h2 class="project-title-lg">FitLife — Personal Coaching Website</h2>
+          <p class="project-desc-lg">Converted a premium Dribbble fitness coaching design into pixel-perfect responsive HTML/CSS with smooth scroll animations and contact form integration.</p>
+          <div class="project-tags"><span class="project-tag">PSD to HTML</span><span class="project-tag">Animations</span><span class="project-tag">WordPress</span></div>
+          <div class="project-stats">
+            <div class="project-stat"><div class="project-stat-val text-gradient">100%</div><div class="project-stat-lbl">Accurate</div></div>
+            <div class="project-stat"><div class="project-stat-val text-gradient">24h</div><div class="project-stat-lbl">Delivery</div></div>
+            <div class="project-stat"><div class="project-stat-val text-gradient">5★</div><div class="project-stat-lbl">Review</div></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 8. Urban Fashion -->
+      <article class="project-card-full animate-on-scroll delay-1" data-category="ecom" aria-label="Urban Fashion project">
+        <div class="project-preview-lg">
+          <div class="mock-site" style="background:#F5F0EB;height:100%;">
+            <div class="mock-nav" style="background:#1C1C1C;">
+              <div class="mock-logo" style="background:#FFFFFF;"></div>
+              <div class="mock-nav-links"><div class="mock-nav-link" style="background:rgba(255,255,255,0.3);"></div><div class="mock-nav-link" style="background:rgba(255,255,255,0.3);"></div><div class="mock-nav-link" style="background:rgba(255,255,255,0.3);"></div></div>
+            </div>
+            <div class="mock-hero" style="background:#F5F0EB;">
+              <div class="mock-h1" style="background:linear-gradient(90deg,#1C1C1C,#333);width:55%;"></div>
+              <div class="mock-h1-sub" style="background:rgba(28,28,28,0.2);"></div>
+              <div class="mock-btn" style="background:#1C1C1C;"></div>
+            </div>
+            <div class="mock-cards"><div class="mock-card" style="background:#FFF;box-shadow:0 2px 8px rgba(0,0,0,0.1);"></div><div class="mock-card" style="background:#FFF;box-shadow:0 2px 8px rgba(0,0,0,0.1);"></div><div class="mock-card" style="background:#FFF;box-shadow:0 2px 8px rgba(0,0,0,0.1);"></div></div>
+          </div>
+          <div class="project-overlay-lg"><span class="project-overlay-btn">View Case Study →</span></div>
+        </div>
+        <div class="project-info-lg">
+          <div class="project-meta">
+            <span class="project-category-badge cat-ecom">E-Commerce</span>
+            <span class="project-result">↑ 250% Revenue</span>
+          </div>
+          <h2 class="project-title-lg">Urban Threads — Fashion E-Commerce</h2>
+          <p class="project-desc-lg">Full Shopify e-commerce build for a fashion brand. Custom theme, optimized product pages, SEO strategy targeting fashion keywords. 250% revenue growth in 5 months.</p>
+          <div class="project-tags"><span class="project-tag">Shopify</span><span class="project-tag">E-Commerce SEO</span><span class="project-tag">Custom Theme</span></div>
+          <div class="project-stats">
+            <div class="project-stat"><div class="project-stat-val text-gradient">250%</div><div class="project-stat-lbl">Revenue Growth</div></div>
+            <div class="project-stat"><div class="project-stat-val text-gradient">8K+</div><div class="project-stat-lbl">Monthly Visitors</div></div>
+            <div class="project-stat"><div class="project-stat-val text-gradient">97</div><div class="project-stat-lbl">PageSpeed</div></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 9. HomeReno Pro -->
+      <article class="project-card-full animate-on-scroll delay-2" data-category="seo" aria-label="HomeReno Pro project">
+        <div class="project-preview-lg">
+          <div class="mock-site" style="background:#F8F4EE;height:100%;">
+            <div class="mock-nav" style="background:#8B4513;">
+              <div class="mock-logo" style="background:#FFF;"></div>
+              <div class="mock-nav-links"><div class="mock-nav-link" style="background:rgba(255,255,255,0.4);"></div><div class="mock-nav-link" style="background:rgba(255,255,255,0.4);"></div></div>
+            </div>
+            <div class="mock-hero" style="background:#F0E8DC;">
+              <div class="mock-h1" style="background:linear-gradient(90deg,#8B4513,#C07040);width:70%;"></div>
+              <div class="mock-h1-sub" style="background:rgba(139,69,19,0.25);"></div>
+              <div class="mock-p" style="background:rgba(139,69,19,0.12);width:85%;"></div>
+              <div class="mock-btn" style="background:#8B4513;"></div>
+            </div>
+            <div class="mock-cards"><div class="mock-card" style="background:#FFF;box-shadow:0 2px 8px rgba(0,0,0,0.1);"></div><div class="mock-card" style="background:#FFF;box-shadow:0 2px 8px rgba(0,0,0,0.1);"></div><div class="mock-card" style="background:#FFF;box-shadow:0 2px 8px rgba(0,0,0,0.1);"></div></div>
+          </div>
+          <div class="project-overlay-lg"><span class="project-overlay-btn">View Case Study →</span></div>
+        </div>
+        <div class="project-info-lg">
+          <div class="project-meta">
+            <span class="project-category-badge cat-seo">Local SEO</span>
+            <span class="project-result">↑ Top 3 for 20 Keywords</span>
+          </div>
+          <h2 class="project-title-lg">HomeReno Pro — Home Renovation SEO</h2>
+          <p class="project-desc-lg">Local SEO campaign for a home renovation contractor. Achieved top 3 positions for 20 local service keywords, resulting in 60+ monthly lead inquiries from organic search.</p>
+          <div class="project-tags"><span class="project-tag">Local SEO</span><span class="project-tag">Google Business</span><span class="project-tag">Citations</span></div>
+          <div class="project-stats">
+            <div class="project-stat"><div class="project-stat-val text-gradient">20</div><div class="project-stat-lbl">Top 3 Keywords</div></div>
+            <div class="project-stat"><div class="project-stat-val text-gradient">60+</div><div class="project-stat-lbl">Monthly Leads</div></div>
+            <div class="project-stat"><div class="project-stat-val text-gradient">4mo</div><div class="project-stat-lbl">To Results</div></div>
+          </div>
+        </div>
+      </article>
+
+    </div><!-- end portfolio-full-grid -->
+  </div>
+</section>
+
+
+<!-- CTA -->
+<section class="cta-section" style="background:var(--bg-secondary);">
+  <div class="cta-bg"></div>
+  <div class="container">
+    <div class="cta-inner">
+      <div class="section-label" style="justify-content:center;margin-bottom:16px;">Let's Work Together</div>
+      <h2 class="cta-title">Want Results Like These <span class="text-gradient">For Your Business?</span></h2>
+      <p class="cta-desc">Let's build something amazing together. Free consultation — no commitment required.</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-primary btn-lg">Start Your Project</a>
+        <a href="services.html" class="btn btn-outline btn-lg">View Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="display:inline-flex;margin-bottom:16px;">
+          <div class="logo-stack"><span>DevNova<span class="dot">.</span></span><span class="logo-sub">Digital Studio</span></div>
+        </a>
+        <p class="footer-desc">Building fast, modern websites that rank on Google and convert visitors into paying clients.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" class="social-link" aria-label="GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+          <a href="#" class="social-link" aria-label="Twitter"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Navigation</h4>
+        <ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="contact.html">Contact</a></li></ul>
+      </div>
+      <div class="footer-col"><h4>Services</h4>
+        <ul class="footer-links"><li><a href="services.html#web-dev">Web Development</a></li><li><a href="services.html#seo">SEO Services</a></li><li><a href="services.html#psd">PSD to HTML</a></li><li><a href="services.html#pricing">Pricing</a></li></ul>
+      </div>
+      <div class="footer-col"><h4>Contact</h4>
+        <ul class="footer-links"><li><a href="mailto:khan97faraz@gmail.com">khan97faraz@gmail.com</a></li><li><a href="contact.html">Send a Message</a></li><li><a href="contact.html">Free Consultation</a></li></ul>
+      </div>
+    </div>
+    <hr class="divider" />
+    <div class="footer-bottom">
+      <p>© 2025 DevNova Digital Studio. All rights reserved.</p>
+      <div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a><a href="sitemap.xml">Sitemap</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

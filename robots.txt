@@ -1,0 +1,25 @@
+# robots.txt — Faraz Digital
+# https://farazdigital.com
+
+User-agent: *
+Allow: /
+
+# Block private/admin files
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /cgi-bin/
+Disallow: /*.php$
+
+# Allow important bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Sitemap location
+Sitemap: https://farazdigital.com/sitemap.xml

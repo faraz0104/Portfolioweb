@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== PRIMARY SEO ===== -->
+  <title>DevNova | Web Development, SEO & PSD to HTML Services</title>
+  <meta name="description" content="Professional web development, SEO, and PSD to HTML services. We build fast, responsive websites that rank on Google's first page and convert visitors into clients." />
+  <meta name="keywords" content="web development services, SEO expert, PSD to HTML, professional web developer, affordable web design, website ranking, front-end developer, WordPress developer" />
+  <meta name="author" content="DevNova Digital Studio" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <link rel="canonical" href="https://farazdigital.com/" />
+
+  <!-- ===== OPEN GRAPH ===== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://devnovastudio.com/" />
+  <meta property="og:title" content="DevNova | Web Development, SEO & PSD to HTML" />
+  <meta property="og:description" content="We build fast, modern websites that rank on Google and convert visitors into paying clients. Expert in Web Dev, SEO & PSD to HTML." />
+  <meta property="og:image" content="https://devnovastudio.com/og-image.jpg" />
+  <meta property="og:site_name" content="DevNova Digital Studio" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- ===== TWITTER CARD ===== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="DevNova | Web Development, SEO & PSD to HTML" />
+  <meta name="twitter:description" content="We build fast, modern websites that rank on Google. Expert in Web Development, SEO & PSD to HTML." />
+  <meta name="twitter:image" content="https://farazdigital.com/og-image.jpg" />
+
+  <!-- ===== SCHEMA MARKUP ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "DevNova Digital Studio",
+    "description": "Professional web development, SEO optimization, and PSD to HTML conversion services.",
+    "url": "https://devnovastudio.com",
+    "email": "khan97faraz@gmail.com",
+    "founder": { "@type": "Person", "name": "Faraz Khan", "jobTitle": "Full-Stack Web Developer & SEO Expert" },
+    "serviceType": ["Web Development", "SEO Services", "PSD to HTML"],
+    "areaServed": "Worldwide",
+    "priceRange": "$$",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "32",
+      "bestRating": "5"
+    },
+    "sameAs": [
+      "https://linkedin.com/in/devnovastudio",
+      "https://github.com/devnovastudio",
+      "https://twitter.com/devnovastudio"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "DevNova Digital Studio",
+    "url": "https://devnovastudio.com",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://farazdigital.com/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- ===== FAVICON ===== -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%236C63FF'/><text x='50%25' y='54%25' font-family='Arial' font-weight='900' font-size='18' fill='white' text-anchor='middle' dominant-baseline='middle'>F</text></svg>" />
+
+  <!-- ===== PRECONNECT ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- ===== STYLESHEET ===== -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    /* Hero typing cursor */
+    #typingText::after { content: '|'; animation: blink 1s step-end infinite; color: var(--accent); }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+    .spin-anim { animation: spin 1s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    /* Gradient animated text */
+    .animated-gradient-text {
+      background: linear-gradient(270deg, #6C63FF, #06B6D4, #A78BFA, #6C63FF);
+      background-size: 300% 300%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: gradientShift 4s ease infinite;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ===================================================
+     NAVIGATION
+====================================================== -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="DevNova Home">
+        <div class="logo-stack">
+          <span>DevNova<span class="dot">.</span></span>
+          <span class="logo-sub">Digital Studio</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html#about">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary" aria-label="Hire Faraz">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 13 19.79 19.79 0 0 1 1.93 4.36 2 2 0 0 1 3.92 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Hire Me
+        </a>
+        <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="contact.html#about">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="btn btn-primary" style="margin-top:16px;">Hire Me</a>
+</div>
+
+
+<!-- ===================================================
+     HERO SECTION
+====================================================== -->
+<section class="hero" id="home" aria-label="Hero section">
+  <div class="hero-bg">
+    <canvas id="heroParticles" style="position:absolute;inset:0;width:100%;height:100%;"></canvas>
+    <div class="hero-grid"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-orb hero-orb-3"></div>
+  </div>
+
+  <div class="container">
+    <div class="hero-inner">
+      <!-- Content -->
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          Available for New Projects
+        </div>
+
+        <h1 class="hero-title">
+          I Build Websites That<br/>
+          <span class="animated-gradient-text">Rank & Convert</span>
+        </h1>
+
+        <p class="hero-desc">
+          Expert <strong style="color:var(--text-primary)">Web Developer</strong>,
+          <strong style="color:var(--text-primary)">SEO Specialist</strong> &
+          <strong style="color:var(--text-primary)">PSD to HTML</strong> professional.
+          I craft high-performance websites that dominate search engines and turn visitors into paying clients.
+        </p>
+
+        <div class="hero-actions">
+          <a href="contact.html" class="btn btn-primary btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            Start Your Project
+          </a>
+          <a href="portfolio.html" class="btn btn-outline btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            View Portfolio
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-num"><span class="counter" data-target="50" data-suffix="+">0+</span></div>
+            <div class="hero-stat-label">Websites Built</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num"><span class="counter" data-target="100" data-suffix="%">0%</span></div>
+            <div class="hero-stat-label">Client Satisfaction</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num"><span class="counter" data-target="5" data-suffix="+">0+</span></div>
+            <div class="hero-stat-label">Years Experience</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual -->
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-window">
+          <div class="window-bar">
+            <span class="window-dot"></span>
+            <span class="window-dot"></span>
+            <span class="window-dot"></span>
+            <div class="window-url">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:5px;color:#10B981"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              farazdigital.com
+            </div>
+          </div>
+          <div class="window-content">
+            <div class="code-block">
+              <div><span class="cm">/* ✨ Building modern web experiences */</span></div>
+              <br/>
+              <div><span class="kw">const</span> <span class="fn">createWebsite</span> = <span class="kw">async</span> () =&gt; &#123;</div>
+              <div>&nbsp;&nbsp;<span class="kw">const</span> project = &#123;</div>
+              <div>&nbsp;&nbsp;&nbsp;&nbsp;design: <span class="str">"pixel-perfect"</span>,</div>
+              <div>&nbsp;&nbsp;&nbsp;&nbsp;performance: <span class="str">"⚡ blazing fast"</span>,</div>
+              <div>&nbsp;&nbsp;&nbsp;&nbsp;seo: <span class="str">"🏆 first page"</span>,</div>
+              <div>&nbsp;&nbsp;&nbsp;&nbsp;responsive: <span class="num">true</span>,</div>
+              <div>&nbsp;&nbsp;&#125;;</div>
+              <br/>
+              <div>&nbsp;&nbsp;<span class="kw">await</span> <span class="fn">optimize</span>(project.seo);</div>
+              <div>&nbsp;&nbsp;<span class="kw">await</span> <span class="fn">deploy</span>(project);</div>
+              <br/>
+              <div>&nbsp;&nbsp;<span class="kw">return</span> <span class="str">"🚀 Your site is live!"</span>;</div>
+              <div>&#125;;</div>
+              <br/>
+              <div><span class="fn">createWebsite</span>(); <span class="cm">// Let's go!</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating cards -->
+        <div class="floating-card fc-seo">
+          <div class="floating-card-icon" style="background:rgba(16,185,129,0.15);color:#10B981;font-size:1.1rem;">📈</div>
+          <div class="floating-card-text">
+            <div class="floating-card-label">Google Ranking</div>
+            <div class="floating-card-value">#1 Position</div>
+          </div>
+        </div>
+
+        <div class="floating-card fc-speed">
+          <div class="floating-card-icon" style="background:rgba(245,158,11,0.15);color:#F59E0B;font-size:1.1rem;">⚡</div>
+          <div class="floating-card-text">
+            <div class="floating-card-label">PageSpeed Score</div>
+            <div class="floating-card-value">98 / 100</div>
+          </div>
+        </div>
+
+        <div class="floating-card fc-rank">
+          <div class="floating-card-icon" style="background:rgba(108,99,255,0.15);color:#8B85FF;font-size:1.1rem;">⭐</div>
+          <div class="floating-card-text">
+            <div class="floating-card-label">Client Rating</div>
+            <div class="floating-card-value">5.0 Stars</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================================================
+     TRUSTED / TECH STACK
+====================================================== -->
+<section class="trusted" aria-label="Technologies used">
+  <div class="container">
+    <p class="trusted-label">Technologies & Tools I Work With</p>
+    <div class="tech-logos">
+      <div class="tech-logo">
+        <div class="tech-logo-icon">
+          <svg viewBox="0 0 32 32" width="36" height="36"><path fill="#E44D26" d="M5 3l2.5 27.5L16 33l8.5-2.5L27 3z"/><path fill="#F16529" d="M16 30.5V5H5.5L7.7 28.7z"/><path fill="#EBEBEB" d="M16 13H11l.4 4H16v-4zm0-5H10.6l.4 4H16V8zm0 14.5l-.1.1L13 16h-2l.7 7 4.3 1.2v-1.7z"/><path fill="#fff" d="M16 17v-4h4.6l-.4 4H16zm1-9H16v4h4.8l-.4-4H17z"/></svg>
+        </div>
+        <span class="tech-logo-name">HTML5</span>
+      </div>
+      <div class="tech-logo">
+        <div class="tech-logo-icon">
+          <svg viewBox="0 0 32 32" width="36" height="36"><path fill="#1572B6" d="M5 3l2.5 27.5L16 33l8.5-2.5L27 3z"/><path fill="#33A9DC" d="M16 30.5V5H5.5L7.7 28.7z"/><path fill="#fff" d="M16 13h-5l.4 4H16v-4zm0-5H10.6l.4 4H16V8zm0 14.5v-4h-.1l-3-1-.2-2H11l.4 4.4 4.6 1.3z"/><path fill="#EBEBEB" d="M16 17v-4h4.6l-.4 4H16zm1-9H16v4h4.8l-.4-4H17zM16 25v-4h3.8l-.4 3.6-3.4.9z"/></svg>
+        </div>
+        <span class="tech-logo-name">CSS3</span>
+      </div>
+      <div class="tech-logo">
+        <div class="tech-logo-icon">
+          <svg viewBox="0 0 32 32" width="36" height="36"><path fill="#F7DF1E" d="M2 2h28v28H2z"/><path d="M20.8 23.9c.4.7 1 1.2 2 1.2.8 0 1.4-.4 1.4-1 0-.7-.6-1-1.5-1.4l-.5-.2c-1.5-.6-2.5-1.4-2.5-3 0-1.5 1.1-2.6 2.9-2.6 1.3 0 2.2.5 2.8 1.6l-1.5 1c-.3-.6-.7-.8-1.3-.8-.6 0-1 .4-1 .8 0 .6.4.8 1.2 1.2l.5.2c1.7.7 2.7 1.5 2.7 3.1 0 1.8-1.4 2.8-3.2 2.8-1.8 0-3-.9-3.5-2.1l1.5-.8zm-8.3.2c.3.5.6.9 1.2.9.6 0 .9-.2.9-.9v-5.7h2v5.8c0 1.9-1.1 2.7-2.7 2.7-1.4 0-2.2-.7-2.7-1.6l1.3-.9v-.3z"/></svg>
+        </div>
+        <span class="tech-logo-name">JavaScript</span>
+      </div>
+      <div class="tech-logo">
+        <div class="tech-logo-icon">
+          <svg viewBox="0 0 32 32" width="36" height="36"><circle cx="16" cy="16" r="14" fill="#20232a"/><path fill="#61DAFB" d="M16 12.8a3.2 3.2 0 1 1 0 6.4 3.2 3.2 0 0 1 0-6.4zm0-1.6c-2.65 0-5.05.36-6.88.97-1.47.49-2.62 1.14-3.4 1.88-.77.74-1.16 1.54-1.16 2.35 0 .81.39 1.61 1.16 2.35.78.74 1.93 1.39 3.4 1.88C10.95 21.24 13.35 21.6 16 21.6s5.05-.36 6.88-.97c1.47-.49 2.62-1.14 3.4-1.88.77-.74 1.16-1.54 1.16-2.35 0-.81-.39-1.61-1.16-2.35-.78-.74-1.93-1.39-3.4-1.88C21.05 11.56 18.65 11.2 16 11.2z"/></svg>
+        </div>
+        <span class="tech-logo-name">React</span>
+      </div>
+      <div class="tech-logo">
+        <div class="tech-logo-icon">
+          <svg viewBox="0 0 32 32" width="36" height="36"><rect width="32" height="32" rx="4" fill="#21759B"/><path fill="#fff" d="M16 6C10.48 6 6 10.48 6 16c0 5.52 4.48 10 10 10s10-4.48 10-10c0-5.52-4.48-10-10-10zm1.14 15.5h-2.28v-6.28h2.28v6.28zm0-8.42h-2.28v-2.16h2.28v2.16z"/></svg>
+        </div>
+        <span class="tech-logo-name">WordPress</span>
+      </div>
+      <div class="tech-logo">
+        <div class="tech-logo-icon">
+          <svg viewBox="0 0 32 32" width="36" height="36"><path fill="#777BB4" d="M16 3C8.82 3 3 8.82 3 16s5.82 13 13 13 13-5.82 13-13S23.18 3 16 3z"/><path fill="#fff" d="M9.5 12h1.5l-.9 4.5c-.1.5.1.7.5.7h.4l-.3 1.3h-.7c-1.1 0-1.7-.6-1.4-2L9.5 12zm3.9 0h1.5l-.4 2h1.5c1.3 0 1.9.7 1.6 2l-.5 2.5h-1.5l.5-2.3c.1-.5 0-.8-.5-.8H15l-.6 3.1h-1.5L13.4 12zm5.3 0h3c1.4 0 2 .9 1.7 2.3-.3 1.4-1.3 2.2-2.7 2.2h-1.5l-.4 2h-1.5l1.4-6.5zm1.3 1.3l-.5 2h1.2c.5 0 .9-.3 1-.8.1-.5-.1-.8-.7-.8l-.9-.4h-.1z"/></svg>
+        </div>
+        <span class="tech-logo-name">PHP</span>
+      </div>
+      <div class="tech-logo">
+        <div class="tech-logo-icon">
+          <svg viewBox="0 0 32 32" width="36" height="36"><path fill="#00758F" d="M16 3C8.82 3 3 8.82 3 16s5.82 13 13 13 13-5.82 13-13S23.18 3 16 3z"/><path fill="#fff" d="M10 20V12h2v6.5h4V20H10zm7-8h2v8h-2v-8zm-.1-2.5a1.1 1.1 0 1 1 2.2 0 1.1 1.1 0 0 1-2.2 0z"/></svg>
+        </div>
+        <span class="tech-logo-name">MySQL</span>
+      </div>
+      <div class="tech-logo">
+        <div class="tech-logo-icon">
+          <svg viewBox="0 0 32 32" width="36" height="36"><rect width="32" height="32" rx="4" fill="#A259FF"/><path fill="#fff" d="M11 10h6a3 3 0 0 1 0 6h-6v-6zm0 7h3a3 3 0 0 1 0 6h-3v-6zm6 0a3 3 0 1 1 0 6 3 3 0 0 1 0-6zM8 22a3 3 0 1 0 6 0v-3H8v3zm3-12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+        </div>
+        <span class="tech-logo-name">Figma</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================================================
+     SERVICES SECTION
+====================================================== -->
+<section class="section-pad" id="services" aria-labelledby="services-heading">
+  <div class="container">
+    <div class="section-header center">
+      <div class="section-label">What I Do</div>
+      <h2 class="section-title" id="services-heading">
+        Services That Drive <span class="text-gradient">Real Results</span>
+      </h2>
+      <p class="section-desc">
+        From pixel-perfect designs to first-page Google rankings — I deliver end-to-end digital solutions that grow your business.
+      </p>
+    </div>
+
+    <div class="services-grid">
+      <!-- Web Development -->
+      <article class="service-card animate-on-scroll">
+        <div class="service-icon service-icon-1" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <h3 class="service-title">Web Development</h3>
+        <p class="service-desc">Custom, high-performance websites built with modern technologies. Fast loading, fully responsive, and optimized for conversions.</p>
+        <ul class="service-features" aria-label="Web development features">
+          <li class="service-feature"><span class="feature-check">✓</span> Custom Website Design</li>
+          <li class="service-feature"><span class="feature-check">✓</span> React / Next.js Development</li>
+          <li class="service-feature"><span class="feature-check">✓</span> WordPress & CMS Integration</li>
+          <li class="service-feature"><span class="feature-check">✓</span> E-commerce Development</li>
+          <li class="service-feature"><span class="feature-check">✓</span> Performance Optimization</li>
+        </ul>
+        <a href="services.html#web-dev" class="service-link">
+          Learn More <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </article>
+
+      <!-- SEO -->
+      <article class="service-card animate-on-scroll delay-1">
+        <div class="service-icon service-icon-2" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
+        <h3 class="service-title">SEO Services</h3>
+        <p class="service-desc">Data-driven SEO strategies that push your website to Google's first page and bring in qualified organic traffic month after month.</p>
+        <ul class="service-features" aria-label="SEO service features">
+          <li class="service-feature"><span class="feature-check">✓</span> Keyword Research & Strategy</li>
+          <li class="service-feature"><span class="feature-check">✓</span> On-Page & Technical SEO</li>
+          <li class="service-feature"><span class="feature-check">✓</span> Link Building & Authority</li>
+          <li class="service-feature"><span class="feature-check">✓</span> Local SEO Optimization</li>
+          <li class="service-feature"><span class="feature-check">✓</span> Monthly Analytics Reports</li>
+        </ul>
+        <a href="services.html#seo" class="service-link" style="color:var(--cyan)">
+          Learn More <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </article>
+
+      <!-- PSD to HTML -->
+      <article class="service-card animate-on-scroll delay-2">
+        <div class="service-icon service-icon-3" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        </div>
+        <h3 class="service-title">PSD to HTML/CSS</h3>
+        <p class="service-desc">Pixel-perfect conversion of your Figma or Photoshop designs into clean, semantic, cross-browser compatible HTML & CSS code.</p>
+        <ul class="service-features" aria-label="PSD to HTML features">
+          <li class="service-feature"><span class="feature-check">✓</span> Pixel-Perfect Accuracy</li>
+          <li class="service-feature"><span class="feature-check">✓</span> Mobile Responsive Code</li>
+          <li class="service-feature"><span class="feature-check">✓</span> Clean, Semantic HTML5</li>
+          <li class="service-feature"><span class="feature-check">✓</span> Cross-Browser Compatible</li>
+          <li class="service-feature"><span class="feature-check">✓</span> WordPress Theme Integration</li>
+        </ul>
+        <a href="services.html#psd" class="service-link" style="color:var(--orange)">
+          Learn More <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================================================
+     STATS / NUMBERS
+====================================================== -->
+<section class="stats-section" aria-label="Statistics and achievements">
+  <div class="stats-bg" aria-hidden="true"></div>
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item animate-on-scroll">
+        <div class="stat-number text-gradient">
+          <span class="counter" data-target="50" data-suffix="+">0+</span>
+        </div>
+        <p class="stat-label">Websites Delivered</p>
+      </div>
+      <div class="stat-item animate-on-scroll delay-1">
+        <div class="stat-number text-gradient">
+          <span class="counter" data-target="100" data-suffix="%">0%</span>
+        </div>
+        <p class="stat-label">Client Satisfaction</p>
+      </div>
+      <div class="stat-item animate-on-scroll delay-2">
+        <div class="stat-number text-gradient">
+          <span class="counter" data-target="5" data-suffix="+">0+</span>
+        </div>
+        <p class="stat-label">Years Experience</p>
+      </div>
+      <div class="stat-item animate-on-scroll delay-3">
+        <div class="stat-number text-gradient">
+          <span class="counter" data-target="30" data-suffix="+">0+</span>
+        </div>
+        <p class="stat-label">Happy Clients</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================================================
+     PORTFOLIO PREVIEW
+====================================================== -->
+<section class="section-pad" id="portfolio" aria-labelledby="portfolio-heading">
+  <div class="container">
+    <div class="section-header" style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px;">
+      <div>
+        <div class="section-label">My Work</div>
+        <h2 class="section-title" id="portfolio-heading">
+          Featured <span class="text-gradient">Projects</span>
+        </h2>
+        <p class="section-desc">A showcase of websites I've built that are live, ranking, and driving business results.</p>
+      </div>
+      <a href="portfolio.html" class="btn btn-outline">
+        View All Projects
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
+    <div class="portfolio-grid">
+      <!-- Project 1 -->
+      <article class="project-card animate-on-scroll" aria-label="TechStart Pro project">
+        <div class="project-preview">
+          <div class="mock-site site-saas">
+            <div class="mock-nav">
+              <div class="mock-logo"></div>
+              <div class="mock-nav-links">
+                <div class="mock-nav-link"></div>
+                <div class="mock-nav-link"></div>
+                <div class="mock-nav-link"></div>
+              </div>
+            </div>
+            <div class="mock-hero">
+              <div class="mock-h1" style="width:80%"></div>
+              <div class="mock-h1-sub"></div>
+              <div class="mock-p" style="width:90%"></div>
+              <div class="mock-p" style="width:70%"></div>
+              <div class="mock-btn"></div>
+            </div>
+            <div class="mock-cards">
+              <div class="mock-card"></div>
+              <div class="mock-card"></div>
+              <div class="mock-card"></div>
+            </div>
+          </div>
+          <div class="project-overlay">
+            <a href="portfolio.html" class="project-overlay-btn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              View Case Study
+            </a>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="project-tag">SaaS</span>
+            <span class="project-tag">React</span>
+            <span class="project-tag">SEO</span>
+          </div>
+          <h3 class="project-title">TechStart Pro — SaaS Landing Page</h3>
+          <p class="project-desc">Full-stack SaaS website with animated UI, payment integration, and #1 ranking for 12 target keywords.</p>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card animate-on-scroll delay-1" aria-label="EcoHarvest project">
+        <div class="project-preview">
+          <div class="mock-site site-ecom">
+            <div class="mock-nav">
+              <div class="mock-logo"></div>
+              <div class="mock-nav-links">
+                <div class="mock-nav-link"></div>
+                <div class="mock-nav-link"></div>
+                <div class="mock-nav-link"></div>
+              </div>
+            </div>
+            <div class="mock-hero">
+              <div class="mock-h1" style="width:70%"></div>
+              <div class="mock-h1-sub"></div>
+              <div class="mock-p" style="width:85%"></div>
+              <div class="mock-btn"></div>
+            </div>
+            <div class="mock-cards">
+              <div class="mock-card"></div>
+              <div class="mock-card"></div>
+              <div class="mock-card"></div>
+              <div class="mock-card"></div>
+            </div>
+          </div>
+          <div class="project-overlay">
+            <a href="portfolio.html" class="project-overlay-btn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              View Case Study
+            </a>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="project-tag">E-Commerce</span>
+            <span class="project-tag">WordPress</span>
+            <span class="project-tag">WooCommerce</span>
+          </div>
+          <h3 class="project-title">EcoHarvest — Organic Store</h3>
+          <p class="project-desc">Complete e-commerce platform with 200+ products, SEO-optimized product pages generating 5k+ monthly organic visitors.</p>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project-card animate-on-scroll delay-2" aria-label="LexCore Legal project">
+        <div class="project-preview">
+          <div class="mock-site site-legal">
+            <div class="mock-nav">
+              <div class="mock-logo"></div>
+              <div class="mock-nav-links">
+                <div class="mock-nav-link"></div>
+                <div class="mock-nav-link"></div>
+                <div class="mock-nav-link"></div>
+              </div>
+            </div>
+            <div class="mock-hero">
+              <div class="mock-h1" style="width:75%"></div>
+              <div class="mock-h1-sub"></div>
+              <div class="mock-p" style="width:90%"></div>
+              <div class="mock-p" style="width:65%"></div>
+              <div class="mock-btn"></div>
+            </div>
+            <div class="mock-cards">
+              <div class="mock-card"></div>
+              <div class="mock-card"></div>
+              <div class="mock-card"></div>
+            </div>
+          </div>
+          <div class="project-overlay">
+            <a href="portfolio.html" class="project-overlay-btn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              View Case Study
+            </a>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="project-tag">Law Firm</span>
+            <span class="project-tag">PSD to HTML</span>
+            <span class="project-tag">Local SEO</span>
+          </div>
+          <h3 class="project-title">LexCore Legal — Law Firm Website</h3>
+          <p class="project-desc">Professional law firm site with local SEO dominance — ranks #1 for 8 high-intent local search terms.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================================================
+     PROCESS / HOW I WORK
+====================================================== -->
+<section class="section-pad" style="background:var(--bg-secondary);" aria-labelledby="process-heading">
+  <div class="container">
+    <div class="section-header center">
+      <div class="section-label">My Process</div>
+      <h2 class="section-title" id="process-heading">
+        How I Turn Ideas Into <span class="text-gradient">Winning Websites</span>
+      </h2>
+      <p class="section-desc">A proven 4-step process that delivers results on time, every time.</p>
+    </div>
+
+    <div class="process-grid">
+      <div class="process-step animate-on-scroll">
+        <div class="step-number">01</div>
+        <h3 class="step-title">Discovery</h3>
+        <p class="step-desc">We discuss your goals, target audience, competitors, and ideal outcomes. I research keywords and plan your digital strategy.</p>
+      </div>
+      <div class="process-step animate-on-scroll delay-1">
+        <div class="step-number">02</div>
+        <h3 class="step-title">Design</h3>
+        <p class="step-desc">I create wireframes and high-fidelity UI mockups tailored to your brand. Modern, clean, and conversion-focused design.</p>
+      </div>
+      <div class="process-step animate-on-scroll delay-2">
+        <div class="step-number">03</div>
+        <h3 class="step-title">Development</h3>
+        <p class="step-desc">Clean, semantic code built for speed and SEO. Responsive on all devices, tested across all major browsers.</p>
+      </div>
+      <div class="process-step animate-on-scroll delay-3">
+        <div class="step-number">04</div>
+        <h3 class="step-title">Launch & Rank</h3>
+        <p class="step-desc">Deploy with full SEO setup — sitemaps, schema, meta tags, speed optimization. Your site is built to rank from day one.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================================================
+     TESTIMONIALS
+====================================================== -->
+<section class="section-pad" id="testimonials" aria-labelledby="testimonials-heading">
+  <div class="container">
+    <div class="section-header center">
+      <div class="section-label">Client Reviews</div>
+      <h2 class="section-title" id="testimonials-heading">
+        What Clients Say About <span class="text-gradient">My Work</span>
+      </h2>
+      <p class="section-desc">Real feedback from real clients who trusted me with their digital presence.</p>
+    </div>
+
+    <div class="testimonials-grid">
+      <article class="testimonial-card animate-on-scroll">
+        <div class="stars" aria-label="5 star rating">★★★★★</div>
+        <p class="testimonial-text">"DevNova built our SaaS landing page in just 2 weeks and optimized it for SEO from day one. Within 3 months we were ranking on page 1 for our main keywords. Incredible work and communication throughout."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background:linear-gradient(135deg,#6C63FF,#06B6D4);">MC</div>
+          <div class="author-info">
+            <div class="author-name">Michael Chen</div>
+            <div class="author-role">CEO, TechStart Pro</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-card animate-on-scroll delay-1">
+        <div class="stars" aria-label="5 star rating">★★★★★</div>
+        <p class="testimonial-text">"Our organic traffic grew from 200 to 5,000+ monthly visitors after DevNova revamped our e-commerce site and ran his SEO strategy. Our online sales have tripled. Best investment we made."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background:linear-gradient(135deg,#10B981,#059669);">SW</div>
+          <div class="author-info">
+            <div class="author-name">Sarah Williams</div>
+            <div class="author-role">Founder, EcoHarvest</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-card animate-on-scroll delay-2">
+        <div class="stars" aria-label="5 star rating">★★★★★</div>
+        <p class="testimonial-text">"The PSD to HTML conversion was absolutely pixel-perfect. Every detail from our Figma design was implemented perfectly, the code is clean, and the site loads incredibly fast. Highly recommend!"</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background:linear-gradient(135deg,#F59E0B,#D97706);">JR</div>
+          <div class="author-info">
+            <div class="author-name">James Rodriguez</div>
+            <div class="author-role">Design Director, PixelCraft Studio</div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================================================
+     CTA SECTION
+====================================================== -->
+<section class="cta-section" aria-labelledby="cta-heading">
+  <div class="cta-bg" aria-hidden="true"></div>
+  <div class="container">
+    <div class="cta-inner">
+      <div class="badge badge-success" style="margin:0 auto 20px;">
+        <span class="pulse-dot" style="background:var(--green);"></span>
+        Ready to Start
+      </div>
+      <h2 class="cta-title" id="cta-heading">
+        Let's Build Your <span class="text-gradient">Dream Website</span> Today
+      </h2>
+      <p class="cta-desc">
+        Get a free consultation. I'll analyze your business, competitors, and create a custom strategy to help you dominate your niche online.
+      </p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-primary btn-lg">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 13 19.79 19.79 0 0 1 1.93 4.36 2 2 0 0 1 3.92 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Get Free Consultation
+        </a>
+        <a href="portfolio.html" class="btn btn-outline btn-lg">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          See My Work
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================================================
+     FOOTER
+====================================================== -->
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer-main">
+      <!-- Brand -->
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <div class="logo-stack">
+            <span>Faraz<span class="dot">.</span></span>
+            <span class="logo-sub">Digital Studio</span>
+          </div>
+        </a>
+        <p class="footer-desc">DevNova builds fast, modern websites that rank on Google and convert visitors into paying clients. Available worldwide for web development, SEO & PSD to HTML projects.</p>
+        <div class="social-links" aria-label="Social media links">
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="GitHub">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Twitter">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html#about">About Me</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html#web-dev">Web Development</a></li>
+          <li><a href="services.html#seo">SEO Services</a></li>
+          <li><a href="services.html#psd">PSD to HTML</a></li>
+          <li><a href="services.html#web-dev">E-Commerce</a></li>
+          <li><a href="services.html#seo">Local SEO</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div class="footer-contact-text">
+            <div class="footer-contact-label">Email</div>
+            <div class="footer-contact-value">khan97faraz@gmail.com</div>
+          </div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="footer-contact-text">
+            <div class="footer-contact-label">Working Hours</div>
+            <div class="footer-contact-value">Mon–Sat: 9 AM – 8 PM</div>
+          </div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5.4 7.05 11.5 7.35 11.76a1 1 0 0 0 1.3 0C13 21.5 20 15.4 20 10a8 8 0 0 0-8-8z"/></svg>
+          </div>
+          <div class="footer-contact-text">
+            <div class="footer-contact-label">Location</div>
+            <div class="footer-contact-value">Remote — Worldwide</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <div class="footer-bottom">
+      <p>© 2025 DevNova Digital Studio. All rights reserved. Built with ❤️ and clean code.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="sitemap.xml">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Services | Web Development, SEO & PSD to HTML — DevNova</title>
+  <meta name="description" content="Professional web development, SEO optimization, and PSD to HTML conversion services. Custom websites that rank on Google's first page and generate leads." />
+  <meta name="keywords" content="web development services, professional SEO services, PSD to HTML conversion, custom website development, affordable SEO, technical SEO expert" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://farazdigital.com/services.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://farazdigital.com/services.html" />
+  <meta property="og:title" content="Web Development, SEO & PSD to HTML Services — DevNova" />
+  <meta property="og:description" content="Expert web development, SEO, and design-to-code services that drive real business results." />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Web Services by DevNova Digital Studio",
+    "itemListElement": [
+      { "@type": "Service", "position": 1, "name": "Web Development", "description": "Custom responsive websites built with modern technologies for maximum performance and conversions.", "provider": { "@type": "Person", "name": "Faraz" } },
+      { "@type": "Service", "position": 2, "name": "SEO Services", "description": "Data-driven SEO strategies to rank your website on Google's first page.", "provider": { "@type": "Person", "name": "Faraz" } },
+      { "@type": "Service", "position": 3, "name": "PSD to HTML", "description": "Pixel-perfect conversion of Figma/PSD designs into clean, semantic HTML & CSS.", "provider": { "@type": "Person", "name": "Faraz" } }
+    ]
+  }
+  </script>
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%236C63FF'/><text x='50%25' y='54%25' font-family='Arial' font-weight='900' font-size='18' fill='white' text-anchor='middle' dominant-baseline='middle'>F</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .service-screenshot { position: relative; overflow: hidden; }
+    .svc-mock { width: 100%; height: 100%; padding: 20px; display: flex; flex-direction: column; gap: 12px; }
+    .svc-mock-bar { display: flex; gap: 6px; margin-bottom: 4px; }
+    .svc-mock-dot { width: 10px; height: 10px; border-radius: 50%; }
+    .svc-row { display: flex; gap: 10px; }
+    .svc-block { border-radius: 6px; }
+    .pricing-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+    .price-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 36px 30px;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+    .price-card.featured {
+      border-color: var(--accent);
+      box-shadow: var(--shadow-accent);
+    }
+    .price-card.featured::before {
+      content: 'Most Popular';
+      position: absolute;
+      top: 16px;
+      right: -28px;
+      background: var(--gradient);
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 4px 40px;
+      transform: rotate(35deg);
+      letter-spacing: 0.05em;
+    }
+    .price-card:hover { transform: translateY(-4px); }
+    .price-label { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 10px; }
+    .price-title { font-family: var(--font-display); font-size: 1.3rem; font-weight: 700; margin-bottom: 8px; }
+    .price-amount { font-family: var(--font-display); font-size: 2.6rem; font-weight: 800; margin-bottom: 4px; }
+    .price-amount sup { font-size: 1.2rem; font-weight: 600; vertical-align: top; margin-top: 8px; }
+    .price-period { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 24px; }
+    .price-features { display: flex; flex-direction: column; gap: 10px; margin-bottom: 28px; }
+    .price-feature { display: flex; align-items: center; gap: 10px; font-size: 0.88rem; color: var(--text-secondary); }
+    .price-feature.no { opacity: 0.4; }
+    .price-feature .check { width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.6rem; color: #fff; flex-shrink: 0; }
+    .check-y { background: var(--green); }
+    .check-n { background: var(--text-muted); }
+    @media(max-width:900px) { .pricing-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-stack">
+          <span>DevNova<span class="dot">.</span></span>
+          <span class="logo-sub">Digital Studio</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html#about">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary">Hire Me</a>
+        <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="contact.html#about">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="btn btn-primary" style="margin-top:16px;">Hire Me</a>
+</div>
+
+
+<!-- PAGE HERO -->
+<header class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="container">
+    <div class="page-hero-inner">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <span>Services</span>
+      </nav>
+      <h1 class="page-title">
+        Services That <span class="text-gradient">Grow Your Business</span>
+      </h1>
+      <p class="page-subtitle">
+        From custom website development to first-page Google rankings — I provide end-to-end digital services that deliver measurable results.
+      </p>
+    </div>
+  </div>
+</header>
+
+
+<!-- ===================================================
+     SERVICE 1 — WEB DEVELOPMENT
+====================================================== -->
+<section class="section-pad" id="web-dev">
+  <div class="container">
+    <div class="service-detail">
+      <div class="service-detail-content">
+        <div class="section-label">Service 01</div>
+        <h2 class="service-detail-title">
+          Custom Web <span class="text-gradient">Development</span>
+        </h2>
+        <p class="service-detail-desc">
+          I build fast, beautiful, and fully responsive websites from scratch. Whether you need a business website, landing page, e-commerce store, or a complex web application — I deliver clean, maintainable code that's optimized for performance and SEO from the ground up.
+        </p>
+        <ul class="service-list" aria-label="Web development service features">
+          <li class="service-list-item">
+            <span class="check-icon check-purple">✓</span>
+            <div><strong style="color:var(--text-primary)">Custom Design</strong> — Unique, brand-aligned designs tailored to your audience</div>
+          </li>
+          <li class="service-list-item">
+            <span class="check-icon check-purple">✓</span>
+            <div><strong style="color:var(--text-primary)">React / Next.js</strong> — Modern framework development for speed and scalability</div>
+          </li>
+          <li class="service-list-item">
+            <span class="check-icon check-purple">✓</span>
+            <div><strong style="color:var(--text-primary)">WordPress CMS</strong> — Easy-to-manage WordPress websites with custom themes</div>
+          </li>
+          <li class="service-list-item">
+            <span class="check-icon check-purple">✓</span>
+            <div><strong style="color:var(--text-primary)">E-Commerce</strong> — WooCommerce, Shopify, and custom store development</div>
+          </li>
+          <li class="service-list-item">
+            <span class="check-icon check-purple">✓</span>
+            <div><strong style="color:var(--text-primary)">Performance</strong> — 90+ PageSpeed scores, Core Web Vitals optimized</div>
+          </li>
+          <li class="service-list-item">
+            <span class="check-icon check-purple">✓</span>
+            <div><strong style="color:var(--text-primary)">Free Revisions</strong> — Unlimited revisions until you're 100% satisfied</div>
+          </li>
+        </ul>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+          <a href="portfolio.html" class="btn btn-outline">See Examples</a>
+        </div>
+      </div>
+
+      <div class="service-visual">
+        <div class="window-bar" style="padding:12px 18px;">
+          <span class="window-dot"></span><span class="window-dot"></span><span class="window-dot"></span>
+          <div class="window-url">mywebsite.com — 98/100 PageSpeed</div>
+        </div>
+        <div class="service-screenshot">
+          <div class="svc-mock" style="background:linear-gradient(145deg,#0A1628,#0F2040);">
+            <div class="svc-mock-bar">
+              <div class="svc-mock-dot" style="background:#FF5F57"></div>
+              <div class="svc-mock-dot" style="background:#FFBD2E"></div>
+              <div class="svc-mock-dot" style="background:#28C840"></div>
+            </div>
+            <div class="svc-block" style="height:20px;width:60%;background:linear-gradient(90deg,#6C63FF,#06B6D4);border-radius:6px;"></div>
+            <div class="svc-block" style="height:10px;width:80%;background:rgba(255,255,255,0.1);"></div>
+            <div class="svc-block" style="height:10px;width:70%;background:rgba(255,255,255,0.06);"></div>
+            <div style="height:24px;width:100px;background:linear-gradient(90deg,#6C63FF,#06B6D4);border-radius:8px;margin-top:4px;"></div>
+            <div class="svc-row" style="margin-top:16px;">
+              <div class="svc-block" style="flex:1;height:80px;background:rgba(108,99,255,0.1);border:1px solid rgba(108,99,255,0.2);border-radius:10px;"></div>
+              <div class="svc-block" style="flex:1;height:80px;background:rgba(6,182,212,0.1);border:1px solid rgba(6,182,212,0.2);border-radius:10px;"></div>
+              <div class="svc-block" style="flex:1;height:80px;background:rgba(108,99,255,0.1);border:1px solid rgba(108,99,255,0.2);border-radius:10px;"></div>
+            </div>
+            <div class="svc-row" style="margin-top:8px;align-items:center;gap:16px;">
+              <div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#6C63FF,#06B6D4);flex-shrink:0;"></div>
+              <div style="flex:1;">
+                <div style="height:8px;background:rgba(255,255,255,0.12);border-radius:4px;margin-bottom:5px;width:60%;"></div>
+                <div style="height:6px;background:rgba(255,255,255,0.06);border-radius:3px;width:80%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ===================================================
+     SERVICE 2 — SEO
+====================================================== -->
+<section class="section-pad" id="seo">
+  <div class="container">
+    <div class="service-detail reverse">
+      <div class="service-detail-content">
+        <div class="section-label" style="color:var(--cyan)">Service 02</div>
+        <h2 class="service-detail-title">
+          SEO That Puts You on <span style="background:linear-gradient(135deg,#06B6D4,#10B981);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Page One</span>
+        </h2>
+        <p class="service-detail-desc">
+          My data-driven SEO approach combines technical optimization, strategic content, and authority building to push your website to the top of Google search results — and keep it there. More visibility means more traffic, leads, and revenue.
+        </p>
+        <ul class="service-list">
+          <li class="service-list-item">
+            <span class="check-icon check-cyan">✓</span>
+            <div><strong style="color:var(--text-primary)">Keyword Research</strong> — Find high-intent, low-competition keywords your customers search</div>
+          </li>
+          <li class="service-list-item">
+            <span class="check-icon check-cyan">✓</span>
+            <div><strong style="color:var(--text-primary)">On-Page SEO</strong> — Optimize titles, meta tags, headings, content, and internal links</div>
+          </li>
+          <li class="service-list-item">
+            <span class="check-icon check-cyan">✓</span>
+            <div><strong style="color:var(--text-primary)">Technical SEO</strong> — Fix crawl errors, improve site speed, structured data, XML sitemaps</div>
+          </li>
+          <li class="service-list-item">
+            <span class="check-icon check-cyan">✓</span>
+            <div><strong style="color:var(--text-primary)">Link Building</strong> — High-quality backlinks from authoritative, relevant websites</div>
+          </li>
+          <li class="service-list-item">
+            <span class="check-icon check-cyan">✓</span>
+            <div><strong style="color:var(--text-primary)">Local SEO</strong> — Google Business Profile, local citations, maps ranking</div>
+          </li>
+          <li class="service-list-item">
+            <span class="check-icon check-cyan">✓</span>
+            <div><strong style="color:var(--text-primary)">Monthly Reports</strong> — Transparent ranking progress and traffic analytics reports</div>
+          </li>
+        </ul>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <a href="contact.html" class="btn btn-primary">Start SEO Campaign</a>
+          <a href="portfolio.html" class="btn btn-outline">SEO Case Studies</a>
+        </div>
+      </div>
+
+      <div class="service-visual">
+        <div class="window-bar" style="padding:12px 18px;">
+          <span class="window-dot"></span><span class="window-dot"></span><span class="window-dot"></span>
+          <div class="window-url">Google Analytics — Organic Traffic</div>
+        </div>
+        <div class="service-screenshot">
+          <div style="background:#0D1B2E;padding:20px;height:320px;position:relative;overflow:hidden;">
+            <!-- Keyword rankings mockup -->
+            <div style="margin-bottom:16px;">
+              <div style="font-size:0.72rem;color:#475569;margin-bottom:10px;letter-spacing:0.05em;text-transform:uppercase;font-weight:600;">Keyword Rankings — Your Website</div>
+              <div style="display:flex;flex-direction:column;gap:8px;">
+                <div style="display:flex;align-items:center;gap:10px;background:rgba(16,185,129,0.08);border:1px solid rgba(16,185,129,0.15);border-radius:8px;padding:8px 12px;">
+                  <span style="font-size:0.78rem;color:#10B981;font-weight:700;width:20px;">#1</span>
+                  <span style="font-size:0.78rem;color:#94A3B8;flex:1;">"web development services"</span>
+                  <span style="font-size:0.7rem;color:#10B981;">↑12</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:10px;background:rgba(16,185,129,0.06);border:1px solid rgba(16,185,129,0.12);border-radius:8px;padding:8px 12px;">
+                  <span style="font-size:0.78rem;color:#10B981;font-weight:700;width:20px;">#2</span>
+                  <span style="font-size:0.78rem;color:#94A3B8;flex:1;">"affordable seo expert"</span>
+                  <span style="font-size:0.7rem;color:#10B981;">↑7</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:10px;background:rgba(6,182,212,0.06);border:1px solid rgba(6,182,212,0.12);border-radius:8px;padding:8px 12px;">
+                  <span style="font-size:0.78rem;color:#06B6D4;font-weight:700;width:20px;">#3</span>
+                  <span style="font-size:0.78rem;color:#94A3B8;flex:1;">"psd to html developer"</span>
+                  <span style="font-size:0.7rem;color:#06B6D4;">↑5</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:10px;background:rgba(108,99,255,0.06);border:1px solid rgba(108,99,255,0.12);border-radius:8px;padding:8px 12px;">
+                  <span style="font-size:0.78rem;color:#8B85FF;font-weight:700;width:20px;">#4</span>
+                  <span style="font-size:0.78rem;color:#94A3B8;flex:1;">"professional web designer"</span>
+                  <span style="font-size:0.7rem;color:#8B85FF;">↑9</span>
+                </div>
+              </div>
+            </div>
+            <div style="display:flex;align-items:flex-end;gap:6px;height:80px;padding-top:10px;border-top:1px solid rgba(255,255,255,0.06);">
+              <div style="font-size:0.68rem;color:#475569;writing-mode:vertical-rl;margin-right:4px;white-space:nowrap;">Organic Traffic</div>
+              <div style="flex:1;background:rgba(108,99,255,0.2);border-radius:3px 3px 0 0;height:30%;"></div>
+              <div style="flex:1;background:rgba(108,99,255,0.3);border-radius:3px 3px 0 0;height:40%;"></div>
+              <div style="flex:1;background:rgba(108,99,255,0.4);border-radius:3px 3px 0 0;height:50%;"></div>
+              <div style="flex:1;background:rgba(108,99,255,0.5);border-radius:3px 3px 0 0;height:55%;"></div>
+              <div style="flex:1;background:rgba(108,99,255,0.6);border-radius:3px 3px 0 0;height:70%;"></div>
+              <div style="flex:1;background:rgba(108,99,255,0.7);border-radius:3px 3px 0 0;height:80%;"></div>
+              <div style="flex:1;background:linear-gradient(180deg,#6C63FF,#06B6D4);border-radius:3px 3px 0 0;height:100%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ===================================================
+     SERVICE 3 — PSD TO HTML
+====================================================== -->
+<section class="section-pad" id="psd">
+  <div class="container">
+    <div class="service-detail">
+      <div class="service-detail-content">
+        <div class="section-label" style="color:var(--orange)">Service 03</div>
+        <h2 class="service-detail-title">
+          PSD / Figma to <span style="background:linear-gradient(135deg,#F59E0B,#EF4444);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">HTML/CSS</span>
+        </h2>
+        <p class="service-detail-desc">
+          Have a stunning design but need it converted to a live website? I translate your Photoshop, Figma, or XD designs into pixel-perfect, responsive HTML/CSS code with clean, well-organized structure that developers love.
+        </p>
+        <ul class="service-list">
+          <li class="service-list-item">
+            <span class="check-icon check-orange">✓</span>
+            <div><strong style="color:var(--text-primary)">Pixel-Perfect</strong> — Every pixel matches your original design exactly</div>
+          </li>
+          <li class="service-list-item">
+            <span class="check-icon check-orange">✓</span>
+            <div><strong style="color:var(--text-primary)">Fully Responsive</strong> — Looks perfect on all screen sizes from mobile to 4K</div>
+          </li>
+          <li class="service-list-item">
+            <span class="check-icon check-orange">✓</span>
+            <div><strong style="color:var(--text-primary)">Semantic HTML5</strong> — Clean, accessible code that search engines love</div>
+          </li>
+          <li class="service-list-item">
+            <span class="check-icon check-orange">✓</span>
+            <div><strong style="color:var(--text-primary)">Cross-Browser</strong> — Tested on Chrome, Firefox, Safari, Edge, and more</div>
+          </li>
+          <li class="service-list-item">
+            <span class="check-icon check-orange">✓</span>
+            <div><strong style="color:var(--text-primary)">Fast Delivery</strong> — Most projects delivered within 24–72 hours</div>
+          </li>
+          <li class="service-list-item">
+            <span class="check-icon check-orange">✓</span>
+            <div><strong style="color:var(--text-primary)">CMS Ready</strong> — Easy to integrate with WordPress, Webflow, or any CMS</div>
+          </li>
+        </ul>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <a href="contact.html" class="btn btn-primary">Upload Your Design</a>
+          <a href="portfolio.html" class="btn btn-outline">View Conversions</a>
+        </div>
+      </div>
+
+      <div class="service-visual">
+        <div class="window-bar" style="padding:12px 18px;">
+          <span class="window-dot"></span><span class="window-dot"></span><span class="window-dot"></span>
+          <div class="window-url">Design → Code — Pixel Perfect ✓</div>
+        </div>
+        <div class="service-screenshot">
+          <div style="background:#0D1B2E;padding:20px;height:320px;display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:center;">
+            <!-- Design side -->
+            <div>
+              <div style="font-size:0.7rem;color:#475569;text-transform:uppercase;letter-spacing:0.06em;font-weight:600;margin-bottom:10px;text-align:center;">Figma Design</div>
+              <div style="background:rgba(245,158,11,0.06);border:1px dashed rgba(245,158,11,0.3);border-radius:10px;padding:14px;">
+                <div style="height:12px;background:linear-gradient(90deg,#F59E0B,#EF4444);border-radius:4px;margin-bottom:8px;width:70%;"></div>
+                <div style="height:8px;background:rgba(245,158,11,0.25);border-radius:3px;margin-bottom:6px;width:90%;"></div>
+                <div style="height:8px;background:rgba(245,158,11,0.15);border-radius:3px;margin-bottom:12px;width:80%;"></div>
+                <div style="display:flex;gap:6px;">
+                  <div style="flex:1;height:40px;border-radius:6px;background:rgba(245,158,11,0.1);border:1px solid rgba(245,158,11,0.2);"></div>
+                  <div style="flex:1;height:40px;border-radius:6px;background:rgba(245,158,11,0.1);border:1px solid rgba(245,158,11,0.2);"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Arrow -->
+            <div style="position:absolute;left:50%;transform:translateX(-50%);z-index:2;top:50%;margin-top:20px;">
+              <div style="background:linear-gradient(135deg,#F59E0B,#EF4444);width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:1rem;box-shadow:0 4px 12px rgba(245,158,11,0.4);">→</div>
+            </div>
+            <!-- Code side -->
+            <div>
+              <div style="font-size:0.7rem;color:#475569;text-transform:uppercase;letter-spacing:0.06em;font-weight:600;margin-bottom:10px;text-align:center;">Clean HTML/CSS</div>
+              <div style="background:#0A0F1E;border:1px solid rgba(108,99,255,0.2);border-radius:10px;padding:14px;font-family:monospace;font-size:0.68rem;color:#94A3B8;line-height:1.6;">
+                <span style="color:#C792EA">&lt;section</span> <span style="color:#FFCB6B">class=</span><span style="color:#C3E88D">"hero"</span><span style="color:#C792EA">&gt;</span><br/>
+                &nbsp;&nbsp;<span style="color:#C792EA">&lt;h1&gt;</span><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#F07178">Heading</span><br/>
+                &nbsp;&nbsp;<span style="color:#C792EA">&lt;/h1&gt;</span><br/>
+                &nbsp;&nbsp;<span style="color:#C792EA">&lt;p&gt;</span>...</span><span style="color:#C792EA">&lt;/p&gt;</span><br/>
+                <span style="color:#C792EA">&lt;/section&gt;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================================================
+     PRICING
+====================================================== -->
+<section class="section-pad" style="background:var(--bg-secondary);" id="pricing">
+  <div class="container">
+    <div class="section-header center">
+      <div class="section-label">Pricing</div>
+      <h2 class="section-title">
+        Transparent <span class="text-gradient">Pricing Plans</span>
+      </h2>
+      <p class="section-desc">No hidden fees. Choose the plan that fits your project. All plans include free consultation.</p>
+    </div>
+
+    <div class="pricing-grid">
+      <!-- Starter -->
+      <div class="price-card animate-on-scroll">
+        <div class="price-label">Web Development</div>
+        <div class="price-title">Starter</div>
+        <div class="price-amount text-gradient"><sup>₹</sup>24,999</div>
+        <div class="price-period">One-time payment</div>
+        <ul class="price-features">
+          <li class="price-feature"><span class="check check-y">✓</span> 5-Page Responsive Website</li>
+          <li class="price-feature"><span class="check check-y">✓</span> Mobile-Friendly Design</li>
+          <li class="price-feature"><span class="check check-y">✓</span> Basic SEO Setup</li>
+          <li class="price-feature"><span class="check check-y">✓</span> Contact Form Integration</li>
+          <li class="price-feature"><span class="check check-y">✓</span> 3 Revisions</li>
+          <li class="price-feature no"><span class="check check-n">✗</span> CMS / WordPress</li>
+          <li class="price-feature no"><span class="check check-n">✗</span> E-Commerce Features</li>
+        </ul>
+        <a href="contact.html" class="btn btn-outline" style="width:100%;justify-content:center;">Get Started</a>
+      </div>
+
+      <!-- Professional (Featured) -->
+      <div class="price-card featured animate-on-scroll delay-1">
+        <div class="price-label">Web Development</div>
+        <div class="price-title">Professional</div>
+        <div class="price-amount text-gradient"><sup>₹</sup>64,999</div>
+        <div class="price-period">One-time payment</div>
+        <ul class="price-features">
+          <li class="price-feature"><span class="check check-y">✓</span> 10-Page Custom Website</li>
+          <li class="price-feature"><span class="check check-y">✓</span> WordPress CMS Integration</li>
+          <li class="price-feature"><span class="check check-y">✓</span> Full On-Page SEO</li>
+          <li class="price-feature"><span class="check check-y">✓</span> Speed Optimization</li>
+          <li class="price-feature"><span class="check check-y">✓</span> Google Analytics Setup</li>
+          <li class="price-feature"><span class="check check-y">✓</span> Unlimited Revisions</li>
+          <li class="price-feature no"><span class="check check-n">✗</span> E-Commerce Features</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;">Get Started</a>
+      </div>
+
+      <!-- Enterprise -->
+      <div class="price-card animate-on-scroll delay-2">
+        <div class="price-label">Web Development</div>
+        <div class="price-title">Enterprise</div>
+        <div class="price-amount text-gradient"><sup>₹</sup>1,24,999</div>
+        <div class="price-period">Starting price</div>
+        <ul class="price-features">
+          <li class="price-feature"><span class="check check-y">✓</span> Unlimited Pages</li>
+          <li class="price-feature"><span class="check check-y">✓</span> E-Commerce / WooCommerce</li>
+          <li class="price-feature"><span class="check check-y">✓</span> Custom Functionality</li>
+          <li class="price-feature"><span class="check check-y">✓</span> Advanced SEO Strategy</li>
+          <li class="price-feature"><span class="check check-y">✓</span> 3-Month SEO Support</li>
+          <li class="price-feature"><span class="check check-y">✓</span> Priority Support</li>
+          <li class="price-feature"><span class="check check-y">✓</span> Performance Guarantee</li>
+        </ul>
+        <a href="contact.html" class="btn btn-outline" style="width:100%;justify-content:center;">Get Custom Quote</a>
+      </div>
+    </div>
+
+    <p style="text-align:center;margin-top:32px;font-size:0.88rem;color:var(--text-muted);">
+      Need SEO only or PSD to HTML? <a href="contact.html" style="color:var(--accent-light);font-weight:600;">Contact us for custom pricing in ₹</a>
+    </p>
+  </div>
+</section>
+
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-bg" aria-hidden="true"></div>
+  <div class="container">
+    <div class="cta-inner">
+      <h2 class="cta-title">Ready to <span class="text-gradient">Get Started?</span></h2>
+      <p class="cta-desc">Let's discuss your project. Free consultation, no commitment required.</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-primary btn-lg">Book Free Consultation</a>
+        <a href="portfolio.html" class="btn btn-outline btn-lg">View My Work</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="display:inline-flex;margin-bottom:16px;">
+          <div class="logo-stack"><span>DevNova<span class="dot">.</span></span><span class="logo-sub">Digital Studio</span></div>
+        </a>
+        <p class="footer-desc">Building fast, modern websites that rank on Google and convert visitors into paying clients.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" class="social-link" aria-label="GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+          <a href="#" class="social-link" aria-label="Twitter"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="#web-dev">Web Development</a></li>
+          <li><a href="#seo">SEO Services</a></li>
+          <li><a href="#psd">PSD to HTML</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:khan97faraz@gmail.com">khan97faraz@gmail.com</a></li>
+          <li><a href="contact.html">Send a Message</a></li>
+          <li><a href="contact.html">Free Consultation</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="divider" />
+    <div class="footer-bottom">
+      <p>© 2025 DevNova Digital Studio. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+        <a href="sitemap.xml">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
